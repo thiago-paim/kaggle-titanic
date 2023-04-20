@@ -1,0 +1,89 @@
+2023-01-12 17:20:41,367 - INFO - Results:
+    mean_absolute_error: 0.2585880052931623,
+    r2_score: 0.3320347778512833,
+    pipeline: ColumnTransformer(remainder='passthrough', transformers=[('numeric_pipeline', Pipeline(steps=[('remove_null_cols', NullThresholdColumnsRemover(threshold=0.25)), ('imputer', SimpleImputer(strategy='median')), ('RobustScaler', RobustScaler())]), ['Survived', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare']), ('string_pipeline', Pipeline(steps=[('ignore_cols', ColumnsRemover(removed_cols=['Name', 'Ticket', 'Cabin'])), ('imputer', SimpleImputer(strategy='most_frequent')), ('encoder', OneHotEncoder())]), ['Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'])], verbose_feature_names_out=False),
+    model: RandomForestRegressor(),
+
+2023-01-12 17:51:43,268 - INFO - Results:
+    mean_absolute_error: 0.257541568794932,
+    r2_score: 0.33528050442960333,
+    pipeline: ColumnTransformer(remainder='passthrough', transformers=[('numeric_pipeline', Pipeline(steps=[('remove_null_cols', NullThresholdColumnsRemover(threshold=0.25)), ('imputer', SimpleImputer(strategy='median')), ('RobustScaler', RobustScaler())]), ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare']), ('string_pipeline', Pipeline(steps=[('ignore_cols', ColumnsRemover(removed_cols=['Name', 'Ticket', 'Cabin'])), ('imputer', SimpleImputer(strategy='most_frequent')), ('encoder', OneHotEncoder())]), ['Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'])], verbose_feature_names_out=False),
+    model: RandomForestRegressor(),
+
+2023-01-12 18:06:08,127 - INFO - Results:
+    mean_absolute_error: 0.21973094170403587,
+    r2_score: 0.10139802631578942,
+    pipeline: ColumnTransformer(remainder='passthrough', transformers=[('numeric_pipeline', Pipeline(steps=[('remove_null_cols', NullThresholdColumnsRemover(threshold=0.25)), ('imputer', SimpleImputer(strategy='median')), ('RobustScaler', RobustScaler())]), ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare']), ('string_pipeline', Pipeline(steps=[('ignore_cols', ColumnsRemover(removed_cols=['Name', 'Ticket', 'Cabin'])), ('imputer', SimpleImputer(strategy='most_frequent')), ('encoder', OneHotEncoder())]), ['Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'])], verbose_feature_names_out=False),
+    model: RandomForestClassifier(),
+
+2023-01-17 13:45:59,785 - INFO - Results:
+    mean_absolute_error: 0.21973094170403587,
+    r2_score: 0.10139802631578942,
+    pipeline: ColumnTransformer(remainder='passthrough', transformers=[('numeric_pipeline', Pipeline(steps=[('remove_null_cols', NullThresholdColumnsRemover(threshold=0.25)), ('imputer', SimpleImputer(strategy='median')), ('RobustScaler', RobustScaler())]), ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare']), ('string_pipeline', Pipeline(steps=[('ignore_cols', ColumnsRemover(removed_cols=['Name', 'Ticket', 'Cabin'])), ('imputer', SimpleImputer(strategy='most_frequent')), ('encoder', OneHotEncoder())]), ['Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'])], verbose_feature_names_out=False),
+    model: RandomForestClassifier(),
+
+2023-01-17 14:00:40,015 - INFO - Results:
+    mean_absolute_error: 0.23318385650224216,
+    r2_score: 0.046381578947368274,
+    pipeline: ColumnTransformer(remainder='passthrough', transformers=[('numeric_pipeline', Pipeline(steps=[('remove_null_cols', NullThresholdColumnsRemover(threshold=0.25)), ('imputer', SimpleImputer(strategy='median')), ('RobustScaler', RobustScaler())]), ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare']), ('string_pipeline', Pipeline(steps=[('ignore_cols', ColumnsRemover(removed_cols=['Name', 'Ticket', 'Cabin'])), ('imputer', SimpleImputer(strategy='most_frequent')), ('encoder', OneHotEncoder())]), ['Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'])], verbose_feature_names_out=False),
+    model: RandomForestClassifier(),
+
+2023-01-17 14:01:46,630 - INFO - Results:
+    mean_absolute_error: 0.21524663677130046,
+    r2_score: 0.11973684210526303,
+    accuracy: 0.7847533632286996,
+    precision: 0.8309859154929577,
+    recall: 0.6210526315789474,
+    pipeline: ColumnTransformer(remainder='passthrough', transformers=[('numeric_pipeline', Pipeline(steps=[('remove_null_cols', NullThresholdColumnsRemover(threshold=0.25)), ('imputer', SimpleImputer(strategy='median')), ('RobustScaler', RobustScaler())]), ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare']), ('string_pipeline', Pipeline(steps=[('ignore_cols', ColumnsRemover(removed_cols=['Name', 'Ticket', 'Cabin'])), ('imputer', SimpleImputer(strategy='most_frequent')), ('encoder', OneHotEncoder())]), ['Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'])], verbose_feature_names_out=False),
+    model: RandomForestClassifier(),
+
+2023-01-17 14:27:13,921 - INFO - Results:
+    mean_absolute_error: 0.2242152466367713,
+    r2_score: 0.08305921052631571,
+    f1_score: 0.7093023255813953,
+    accuracy: 0.7757847533632287,
+    precision: 0.7922077922077922,
+    recall: 0.6421052631578947,
+    pipeline: ColumnTransformer(remainder='passthrough', transformers=[('numeric_pipeline', Pipeline(steps=[('remove_null_cols', NullThresholdColumnsRemover(threshold=0.25)), ('imputer', SimpleImputer(strategy='median')), ('RobustScaler', RobustScaler())]), ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare']), ('string_pipeline', Pipeline(steps=[('ignore_cols', ColumnsRemover(removed_cols=['Name', 'Ticket', 'Cabin'])), ('imputer', SimpleImputer(strategy='most_frequent')), ('encoder', OneHotEncoder())]), ['Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'])], verbose_feature_names_out=False),
+    model: RandomForestClassifier(),
+
+2023-01-17 16:03:31,410 - INFO - Results:
+    mean_absolute_error: 0.21973094170403587,
+    r2_score: 0.10139802631578942,
+    f1_score: 0.6956521739130435,
+    accuracy: 0.7802690582959642,
+    precision: 0.8484848484848485,
+    recall: 0.5894736842105263,
+    pipeline: ColumnTransformer(remainder='passthrough', transformers=[('numeric_pipeline', Pipeline(steps=[('remove_null_cols', NullThresholdColumnsRemover(threshold=0.25)), ('imputer', SimpleImputer(strategy='median')), ('RobustScaler', RobustScaler())]), ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare']), ('string_pipeline', Pipeline(steps=[('ignore_cols', ColumnsRemover(removed_cols=['Name', 'Ticket', 'Cabin'])), ('imputer', SimpleImputer(strategy='most_frequent')), ('encoder', OneHotEncoder())]), ['Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'])], verbose_feature_names_out=False),
+    model: RandomForestClassifier(max_depth=30, max_leaf_nodes=15, n_estimators=75),
+
+2023-01-17 16:03:31,410 - INFO - Results:
+    mean_absolute_error: 0.21973094170403587,
+    r2_score: 0.10139802631578942,
+    f1_score: 0.6956521739130435,
+    accuracy: 0.7802690582959642,
+    precision: 0.8484848484848485,
+    recall: 0.5894736842105263,
+    pipeline: ColumnTransformer(remainder='passthrough', transformers=[('numeric_pipeline', Pipeline(steps=[('remove_null_cols', NullThresholdColumnsRemover(threshold=0.25)), ('imputer', SimpleImputer(strategy='median')), ('RobustScaler', RobustScaler())]), ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare']), ('string_pipeline', Pipeline(steps=[('ignore_cols', ColumnsRemover(removed_cols=['Name', 'Ticket', 'Cabin'])), ('imputer', SimpleImputer(strategy='most_frequent')), ('encoder', OneHotEncoder())]), ['Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'])], verbose_feature_names_out=False),
+    model: RandomForestClassifier(max_depth=30, max_leaf_nodes=15, n_estimators=75),
+
+2023-01-17 16:13:26,652 - INFO - Results:
+    mean_absolute_error: 0.20179372197309417,
+    r2_score: 0.17475328947368407,
+    f1_score: 0.7457627118644067,
+    accuracy: 0.7982062780269058,
+    precision: 0.8048780487804879,
+    recall: 0.6947368421052632,
+    pipeline: ColumnTransformer(remainder='passthrough', transformers=[('numeric_pipeline', Pipeline(steps=[('remove_null_cols', NullThresholdColumnsRemover(threshold=0.25)), ('imputer', SimpleImputer(strategy='median')), ('RobustScaler', RobustScaler())]), ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare']), ('string_pipeline', Pipeline(steps=[('ignore_cols', ColumnsRemover(removed_cols=['Name', 'Ticket', 'Cabin'])), ('imputer', SimpleImputer(strategy='most_frequent')), ('encoder', OneHotEncoder())]), ['Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'])], verbose_feature_names_out=False),
+    model: LogisticRegression(C=0.4, solver='liblinear'),
+
+2023-01-17 16:13:26,652 - INFO - Results:
+    mean_absolute_error: 0.20179372197309417,
+    r2_score: 0.17475328947368407,
+    f1_score: 0.7457627118644067,
+    accuracy: 0.7982062780269058,
+    precision: 0.8048780487804879,
+    recall: 0.6947368421052632,
+    pipeline: ColumnTransformer(remainder='passthrough', transformers=[('numeric_pipeline', Pipeline(steps=[('remove_null_cols', NullThresholdColumnsRemover(threshold=0.25)), ('imputer', SimpleImputer(strategy='median')), ('RobustScaler', RobustScaler())]), ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare']), ('string_pipeline', Pipeline(steps=[('ignore_cols', ColumnsRemover(removed_cols=['Name', 'Ticket', 'Cabin'])), ('imputer', SimpleImputer(strategy='most_frequent')), ('encoder', OneHotEncoder())]), ['Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'])], verbose_feature_names_out=False),
+    model: LogisticRegression(C=0.4, solver='liblinear'),
+
